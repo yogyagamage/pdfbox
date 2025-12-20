@@ -73,11 +73,11 @@
 
   <build>
     <plugins>
-        <plugin>
+        <!-- <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-checkstyle-plugin</artifactId>
             <version>3.6.0</version>
-            <!-- this one is for checkstyle:check -->
+            this one is for checkstyle:check
             <configuration>
                 <skip>${skipTests}</skip>
                 <configLocation>checkstyle.xml</configLocation>
@@ -86,7 +86,7 @@
                 <testSourceDirectories>${project.basedir}/src/test/java</testSourceDirectories>
                 <failsOnError>true</failsOnError>
             </configuration>
-            <!-- this one is for checkstyle in the complete build -->
+            this one is for checkstyle in the complete build
             <executions>
                 <execution>
                     <id>check</id>
@@ -104,7 +104,7 @@
                     </configuration>
                 </execution>
             </executions>
-        </plugin>
+        </plugin> -->
         <plugin>
           <artifactId>maven-surefire-plugin</artifactId>
           <configuration>

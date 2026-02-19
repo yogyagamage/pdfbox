@@ -1,0 +1,51 @@
+================================================================================
+JACOCO COVERAGE CHECK RESULTS
+================================================================================
+
+================================================================================
+COVERED Call Sites (Dynamically Reachable)
+================================================================================
+Count: 2
+
+1.
+  Caller: org.apache.pdfbox.pdfparser.BruteForceParser.lambda.bfSearchForObjStreams(java.util.Map.Entry)
+  Target: org.apache.commons.logging.Log.warn(java.lang.Object)
+  Details: Covered on lines: [311] (method boundary: 302-381)
+
+2.
+  Caller: org.apache.pdfbox.pdmodel.fixup.processor.AcroFormOrphanWidgetsProcessor.lambda.addFontFromWidget(org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.cos.COSName)
+  Target: org.apache.commons.logging.Log.isDebugEnabled()
+  Details: Covered on lines: [174] (method boundary: 155-197)
+
+================================================================================
+NOT COVERED Call Sites
+================================================================================
+Count: 4
+
+1.
+  Caller: org.apache.pdfbox.pdmodel.PDPage.lambda.getContentsForRandomAccess(java.util.List, org.apache.pdfbox.cos.COSStream)
+  Target: org.apache.commons.logging.Log.warn(java.lang.Object)
+  Details: Not covered. Target called on lines [249, 268, 290, 846], but none are covered within method getContentsForRandomAccess (boundary: 259-307, covered: [259, 260, 264, 272, 273, 275, 276, 277, 278, 279, 280, 281, 285, 286, 291, 292, 293, 295, 298])
+
+2.
+  Caller: org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes.<clinit>()
+  Target: org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)
+  Details: Method <clinit> has no covered lines (lines 38-end)
+
+3.
+  Caller: org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes.<clinit>()
+  Target: org.apache.commons.logging.LogFactory.getLog(java.lang.Class)
+  Details: Method <clinit> has no covered lines (lines 38-end)
+
+4.
+  Caller: org.apache.pdfbox.pdmodel.fixup.processor.AcroFormOrphanWidgetsProcessor.lambda.addFontFromWidget(org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.cos.COSName)
+  Target: org.apache.commons.logging.Log.debug(java.lang.Object)
+  Details: Not covered. Target called on lines [80, 86, 100, 176, 182, 187, 243, 252, 258, 264], but none are covered within method addFontFromWidget (boundary: 155-197, covered: [155, 156, 158, 160, 161, 165, 167, 171, 173, 174, 183, 189, 190])
+
+================================================================================
+SUMMARY
+================================================================================
+Total Potentially Unreachable: 6
+Actually Covered (False Positives): 2
+Not Covered : 4
+Errors: 0

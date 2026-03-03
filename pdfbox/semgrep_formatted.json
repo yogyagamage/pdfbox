@@ -1,0 +1,1623 @@
+{
+  "version": "1.153.0",
+  "results": [
+    {
+      "check_id": "ssc-parity-19e744de45e3689f32722eabc2a6f673bb2ebae6",
+      "path": "pom.xml",
+      "start": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "end": {
+        "line": 1,
+        "col": 1,
+        "offset": 0
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Affected versions of org.apache.logging.log4j:log4j-core are vulnerable to Improper Validation of Certificate with Host Mismatch.",
+        "metadata": {
+          "confidence": "LOW",
+          "category": "security",
+          "cve": "CVE-2025-68161",
+          "cwe": [
+            "CWE-297: Improper Validation of Certificate with Host Mismatch"
+          ],
+          "ghsa": "GHSA-vc5p-v9hr-52mj",
+          "owasp": [
+            "A06:2021 - Vulnerable and Outdated Components",
+            "A07:2021 - Identification and Authentication Failures",
+            "A07:2025 - Authentication Failures"
+          ],
+          "publish-date": "2025-12-18T21:31:44Z",
+          "references": [
+            "https://github.com/advisories/GHSA-vc5p-v9hr-52mj",
+            "https://nvd.nist.gov/vuln/detail/CVE-2025-68161"
+          ],
+          "sca-fix-versions": [
+            {
+              "org.apache.logging.log4j:log4j-core": "2.25.3"
+            }
+          ],
+          "sca-kind": "legacy",
+          "sca-schema": 20230302,
+          "sca-severity": "MODERATE",
+          "sca-vuln-database-identifier": "CVE-2025-68161",
+          "technology": [
+            "java",
+            "kotlin",
+            "scala"
+          ],
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Improper Authentication"
+          ],
+          "semgrep.dev": {
+            "rule": {
+              "r_id": 272499,
+              "rv_id": 1259409,
+              "rule_id": "JDU369L",
+              "version_id": "QkTGrLJ",
+              "url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-19e744de45e3689f32722eabc2a6f673bb2ebae6",
+              "origin": "custom",
+              "rule_name": "ssc-parity-19e744de45e3689f32722eabc2a6f673bb2ebae6"
+            },
+            "src": "new-rule"
+          },
+          "source": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-19e744de45e3689f32722eabc2a6f673bb2ebae6",
+          "semgrep.url": "https://semgrep.dev/orgs/-/supply-chain/advisories?q=ssc-parity-19e744de45e3689f32722eabc2a6f673bb2ebae6",
+          "dev.semgrep.actions": []
+        },
+        "severity": "WARNING",
+        "fingerprint": "3375880d491aff9913d2980a8f98aa9c53d89ba0942048593171d685032ae399424e7ffe2b5bc9ee67852cce05f27b3abf7832493a8b60242689a4e38638da44_0",
+        "lines": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+        "is_ignored": false,
+        "sca_info": {
+          "reachability_rule": false,
+          "sca_finding_schema": 20220913,
+          "dependency_match": {
+            "dependency_pattern": {
+              "ecosystem": "maven",
+              "package": "org.apache.logging.log4j:log4j-core",
+              "semver_range": ">=2.0-beta9, <2.25.3"
+            },
+            "found_dependency": {
+              "package": "org.apache.logging.log4j:log4j-core",
+              "version": "2.25.2",
+              "ecosystem": "maven",
+              "allowed_hashes": {},
+              "transitivity": "direct",
+              "manifest_path": "pom.xml",
+              "lockfile_path": "pom.xml",
+              "line_number": 1,
+              "children": [
+                {
+                  "package": "org.apache.logging.log4j:log4j-api",
+                  "version": "2.25.2"
+                }
+              ]
+            },
+            "lockfile": "pom.xml"
+          },
+          "reachable": false
+        },
+        "engine_kind": "OSS"
+      }
+    },
+    {
+      "check_id": "java.lang.security.audit.crypto.use-of-md5.use-of-md5",
+      "path": "src/main/java/org/apache/pdfbox/pdmodel/encryption/MessageDigests.java",
+      "start": {
+        "line": 39,
+        "col": 46,
+        "offset": 1252
+      },
+      "end": {
+        "line": 39,
+        "col": 51,
+        "offset": 1257
+      },
+      "extra": {
+        "metavars": {
+          "$1": {
+            "start": {
+              "line": 1,
+              "col": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "col": 6,
+              "offset": 5
+            },
+            "abstract_content": "\"MD5\""
+          },
+          "$ALGO": {
+            "start": {
+              "line": 39,
+              "col": 46,
+              "offset": 1252
+            },
+            "end": {
+              "line": 39,
+              "col": 51,
+              "offset": 1257
+            },
+            "abstract_content": "\"MD5\""
+          }
+        },
+        "message": "Detected MD5 hash algorithm which is considered insecure. MD5 is not collision resistant and is therefore not suitable as a cryptographic signature. Use HMAC instead.",
+        "fix": "\"SHA-512\"",
+        "metadata": {
+          "functional-categories": [
+            "crypto::search::hash-algorithm::java.security"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures",
+            "A04:2025 - Cryptographic Failures"
+          ],
+          "cwe": [
+            "CWE-328: Use of Weak Hash"
+          ],
+          "source-rule-url": "https://find-sec-bugs.github.io/bugs.htm#WEAK_MESSAGE_DIGEST_MD5",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+          ],
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "MEDIUM",
+          "impact": "MEDIUM",
+          "confidence": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Insecure Hashing Algorithm"
+          ],
+          "source": "https://semgrep.dev/r/java.lang.security.audit.crypto.use-of-md5.use-of-md5",
+          "shortlink": "https://sg.run/ryJn",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 17325,
+              "rule_id": "KxU5lW",
+              "rule_name": "java.lang.security.audit.crypto.use-of-md5.use-of-md5",
+              "rv_id": 1263013,
+              "url": "https://semgrep.dev/playground/r/0bTKzGX/java.lang.security.audit.crypto.use-of-md5.use-of-md5",
+              "version_id": "0bTKzGX"
+            },
+            "src": "new-rule"
+          },
+          "dev.semgrep.actions": [
+            "monitor"
+          ],
+          "semgrep.policy": {
+            "id": 271716,
+            "name": "Rule Board - Audit column",
+            "slug": "rule-board-audit"
+          },
+          "semgrep.url": "https://semgrep.dev/r/java.lang.security.audit.crypto.use-of-md5.use-of-md5",
+          "semgrep.ruleset": "default",
+          "semgrep.ruleset_id": 3471
+        },
+        "severity": "WARNING",
+        "fingerprint": "f88c226ae80cd09a344facca46842e43ee4dac47ae6b5f3b67aa559ebf6de16521cf9323c58496163814acc044f1d2898e9f99da6f45ce7591091f6fd4b71d05_0",
+        "lines": "            return MessageDigest.getInstance(\"MD5\");",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "PRO"
+      }
+    },
+    {
+      "check_id": "java.lang.security.audit.crypto.use-of-sha1.use-of-sha1",
+      "path": "src/main/java/org/apache/pdfbox/pdmodel/encryption/MessageDigests.java",
+      "start": {
+        "line": 55,
+        "col": 13,
+        "offset": 1545
+      },
+      "end": {
+        "line": 55,
+        "col": 54,
+        "offset": 1586
+      },
+      "extra": {
+        "metavars": {
+          "$1": {
+            "start": {
+              "line": 1,
+              "col": 1,
+              "offset": 0
+            },
+            "end": {
+              "line": 1,
+              "col": 6,
+              "offset": 5
+            },
+            "abstract_content": "SHA-1"
+          },
+          "$ALGO": {
+            "start": {
+              "line": 55,
+              "col": 47,
+              "offset": 1579
+            },
+            "end": {
+              "line": 55,
+              "col": 52,
+              "offset": 1584
+            },
+            "abstract_content": "SHA-1"
+          }
+        },
+        "message": "Detected SHA1 hash algorithm which is considered insecure. SHA1 is not collision resistant and is therefore not suitable as a cryptographic signature. Instead, use PBKDF2 for password hashing or SHA256 or SHA512 for other hash function applications.",
+        "metadata": {
+          "functional-categories": [
+            "crypto::search::hash-algorithm::javax.crypto"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures",
+            "A04:2025 - Cryptographic Failures"
+          ],
+          "cwe": [
+            "CWE-328: Use of Weak Hash"
+          ],
+          "source-rule-url": "https://find-sec-bugs.github.io/bugs.htm#WEAK_MESSAGE_DIGEST_SHA1",
+          "asvs": {
+            "control_id": "6.2.5 Insecure Algorithm",
+            "control_url": "https://github.com/OWASP/ASVS/blob/master/4.0/en/0x14-V6-Cryptography.md#v62-algorithms",
+            "section": "V6 Stored Cryptography Verification Requirements",
+            "version": "4"
+          },
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+          ],
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "MEDIUM",
+          "impact": "MEDIUM",
+          "confidence": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Insecure Hashing Algorithm"
+          ],
+          "source": "https://semgrep.dev/r/java.lang.security.audit.crypto.use-of-sha1.use-of-sha1",
+          "shortlink": "https://sg.run/bXNp",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 17326,
+              "rule_id": "qNUWNn",
+              "rule_name": "java.lang.security.audit.crypto.use-of-sha1.use-of-sha1",
+              "rv_id": 1263016,
+              "url": "https://semgrep.dev/playground/r/l4TJRpL/java.lang.security.audit.crypto.use-of-sha1.use-of-sha1",
+              "version_id": "l4TJRpL"
+            },
+            "src": "new-rule"
+          },
+          "dev.semgrep.actions": [
+            "monitor"
+          ],
+          "semgrep.policy": {
+            "id": 271716,
+            "name": "Rule Board - Audit column",
+            "slug": "rule-board-audit"
+          },
+          "semgrep.url": "https://semgrep.dev/r/java.lang.security.audit.crypto.use-of-sha1.use-of-sha1",
+          "semgrep.ruleset": "default",
+          "semgrep.ruleset_id": 3471
+        },
+        "severity": "WARNING",
+        "fingerprint": "f2016162f89a2f9e2c63c8ac134590513ac0eec4432c2295e286c1eccf2605d6134577c9b821d16893dd302ce47383ac73699fccea5deeb3ad9bc2be72b3be61_0",
+        "lines": "            return MessageDigest.getInstance(\"SHA-1\");",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "PRO"
+      }
+    },
+    {
+      "check_id": "java.lang.security.audit.cbc-padding-oracle.cbc-padding-oracle",
+      "path": "src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+      "start": {
+        "line": 397,
+        "col": 44,
+        "offset": 13222
+      },
+      "end": {
+        "line": 397,
+        "col": 66,
+        "offset": 13244
+      },
+      "extra": {
+        "metavars": {},
+        "message": "Using CBC with PKCS5Padding is susceptible to padding oracle attacks. A malicious actor could discern the difference between plaintext with valid or invalid padding. Further, CBC mode does not include any integrity checks. Use 'AES/GCM/NoPadding' instead.",
+        "fix": "\"AES/GCM/NoPadding\"",
+        "metadata": {
+          "cwe": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures",
+            "A04:2025 - Cryptographic Failures"
+          ],
+          "source-rule-url": "https://find-sec-bugs.github.io/bugs.htm#PADDING_ORACLE",
+          "references": [
+            "https://capec.mitre.org/data/definitions/463.html",
+            "https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html#cipher-modes",
+            "https://find-sec-bugs.github.io/bugs.htm#CIPHER_INTEGRITY"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "subcategory": [
+            "audit"
+          ],
+          "likelihood": "HIGH",
+          "impact": "MEDIUM",
+          "confidence": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cryptographic Issues"
+          ],
+          "source": "https://semgrep.dev/r/java.lang.security.audit.cbc-padding-oracle.cbc-padding-oracle",
+          "shortlink": "https://sg.run/ydxr",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9168,
+              "rule_id": "ZqU5oD",
+              "rule_name": "java.lang.security.audit.cbc-padding-oracle.cbc-padding-oracle",
+              "rv_id": 1262990,
+              "url": "https://semgrep.dev/playground/r/44TEjbE/java.lang.security.audit.cbc-padding-oracle.cbc-padding-oracle",
+              "version_id": "44TEjbE"
+            },
+            "src": "new-rule"
+          },
+          "dev.semgrep.actions": [
+            "monitor"
+          ],
+          "semgrep.policy": {
+            "id": 271716,
+            "name": "Rule Board - Audit column",
+            "slug": "rule-board-audit"
+          },
+          "semgrep.url": "https://semgrep.dev/r/java.lang.security.audit.cbc-padding-oracle.cbc-padding-oracle",
+          "semgrep.ruleset": "default",
+          "semgrep.ruleset_id": 3471
+        },
+        "severity": "WARNING",
+        "fingerprint": "4d1469b530496fab013cfc33313f2bc5954286f0ad085955533395b6da6f2cc4af062c264715800697c9c497eeba7eee0b2eda1be0fe89165cd41c75967b4d8e_0",
+        "lines": "        Cipher cipher = Cipher.getInstance(\"AES/CBC/PKCS5Padding\");",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "PRO"
+      }
+    },
+    {
+      "check_id": "java.lang.security.audit.crypto.ecb-cipher.ecb-cipher",
+      "path": "src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java",
+      "start": {
+        "line": 322,
+        "col": 13,
+        "offset": 12588
+      },
+      "end": {
+        "line": 323,
+        "col": 69,
+        "offset": 12734
+      },
+      "extra": {
+        "metavars": {
+          "$VAR": {
+            "start": {
+              "line": 323,
+              "col": 20,
+              "offset": 12685
+            },
+            "end": {
+              "line": 323,
+              "col": 26,
+              "offset": 12691
+            },
+            "abstract_content": "cipher"
+          },
+          "$CIPHER": {
+            "start": {
+              "line": 323,
+              "col": 29,
+              "offset": 12694
+            },
+            "end": {
+              "line": 323,
+              "col": 35,
+              "offset": 12700
+            },
+            "abstract_content": "Cipher Cipher Cipher"
+          },
+          "$MODE": {
+            "start": {
+              "line": 323,
+              "col": 48,
+              "offset": 12713
+            },
+            "end": {
+              "line": 323,
+              "col": 67,
+              "offset": 12732
+            },
+            "abstract_content": "\"AES/ECB/NoPadding\""
+          }
+        },
+        "message": "Cipher in ECB mode is detected. ECB mode produces the same output for the same input each time which allows an attacker to intercept and replay the data. Further, ECB mode does not provide any integrity checking. See https://find-sec-bugs.github.io/bugs.htm#CIPHER_INTEGRITY.",
+        "metadata": {
+          "functional-categories": [
+            "crypto::search::mode::javax.crypto"
+          ],
+          "cwe": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures",
+            "A04:2025 - Cryptographic Failures"
+          ],
+          "source-rule-url": "https://find-sec-bugs.github.io/bugs.htm#ECB_MODE",
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures"
+          ],
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "MEDIUM",
+          "impact": "MEDIUM",
+          "confidence": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cryptographic Issues"
+          ],
+          "source": "https://semgrep.dev/r/java.lang.security.audit.crypto.ecb-cipher.ecb-cipher",
+          "shortlink": "https://sg.run/Ro9K",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 9193,
+              "rule_id": "5rUOb6",
+              "rule_name": "java.lang.security.audit.crypto.ecb-cipher.ecb-cipher",
+              "rv_id": 1262998,
+              "url": "https://semgrep.dev/playground/r/DkTRbwL/java.lang.security.audit.crypto.ecb-cipher.ecb-cipher",
+              "version_id": "DkTRbwL"
+            },
+            "src": "new-rule"
+          },
+          "dev.semgrep.actions": [
+            "monitor"
+          ],
+          "semgrep.policy": {
+            "id": 271716,
+            "name": "Rule Board - Audit column",
+            "slug": "rule-board-audit"
+          },
+          "semgrep.url": "https://semgrep.dev/r/java.lang.security.audit.crypto.ecb-cipher.ecb-cipher",
+          "semgrep.ruleset": "default",
+          "semgrep.ruleset_id": 3471
+        },
+        "severity": "WARNING",
+        "fingerprint": "05f1227695ab443df898f96ac2e7adf5cdcb1324370863ed88210e90af4a618205cc84c7e0bf31c0a0112f271dfc9e41b302af8905d652a243cf46be55da4960_0",
+        "lines": "            @SuppressWarnings({\"squid:S5542\",\"lgtm [java/weak-cryptographic-algorithm]\"})\n            Cipher cipher = Cipher.getInstance(\"AES/ECB/NoPadding\");",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "PRO"
+      }
+    },
+    {
+      "check_id": "java.lang.security.audit.crypto.use-of-aes-ecb.use-of-aes-ecb",
+      "path": "src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java",
+      "start": {
+        "line": 323,
+        "col": 29,
+        "offset": 12694
+      },
+      "end": {
+        "line": 323,
+        "col": 68,
+        "offset": 12733
+      },
+      "extra": {
+        "metavars": {
+          "$CIPHER": {
+            "start": {
+              "line": 323,
+              "col": 29,
+              "offset": 12694
+            },
+            "end": {
+              "line": 323,
+              "col": 35,
+              "offset": 12700
+            },
+            "abstract_content": "Cipher Cipher Cipher"
+          }
+        },
+        "message": "Use of AES with ECB mode detected. ECB doesn't provide message confidentiality and  is not semantically secure so should not be used. Instead, use a strong, secure cipher: Cipher.getInstance(\"AES/CBC/PKCS7PADDING\"). See https://owasp.org/www-community/Using_the_Java_Cryptographic_Extensions for more information.",
+        "metadata": {
+          "functional-categories": [
+            "crypto::search::mode::javax.crypto"
+          ],
+          "cwe": [
+            "CWE-327: Use of a Broken or Risky Cryptographic Algorithm"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures",
+            "A04:2025 - Cryptographic Failures"
+          ],
+          "category": "security",
+          "technology": [
+            "java"
+          ],
+          "references": [
+            "https://owasp.org/Top10/A02_2021-Cryptographic_Failures",
+            "https://googleprojectzero.blogspot.com/2022/10/rc4-is-still-considered-harmful.html"
+          ],
+          "subcategory": [
+            "vuln"
+          ],
+          "likelihood": "MEDIUM",
+          "impact": "MEDIUM",
+          "confidence": "HIGH",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Cryptographic Issues"
+          ],
+          "source": "https://semgrep.dev/r/java.lang.security.audit.crypto.use-of-aes-ecb.use-of-aes-ecb",
+          "shortlink": "https://sg.run/dB2Y",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 48734,
+              "rule_id": "WAU2yA",
+              "rule_name": "java.lang.security.audit.crypto.use-of-aes-ecb.use-of-aes-ecb",
+              "rv_id": 1263009,
+              "url": "https://semgrep.dev/playground/r/A8TgdEo/java.lang.security.audit.crypto.use-of-aes-ecb.use-of-aes-ecb",
+              "version_id": "A8TgdEo"
+            },
+            "src": "new-rule"
+          },
+          "dev.semgrep.actions": [
+            "monitor"
+          ],
+          "semgrep.policy": {
+            "id": 271716,
+            "name": "Rule Board - Audit column",
+            "slug": "rule-board-audit"
+          },
+          "semgrep.url": "https://semgrep.dev/r/java.lang.security.audit.crypto.use-of-aes-ecb.use-of-aes-ecb",
+          "semgrep.ruleset": "default",
+          "semgrep.ruleset_id": 3471
+        },
+        "severity": "WARNING",
+        "fingerprint": "9e646522fc50464641b0de5d9eaa01c5bc80e3e21af0f7e5cd43dbd512ffd93981f0362de5d0f53b9609402e899bc9867d89903b2fc53465b3ce9ec89f394e6d_0",
+        "lines": "            Cipher cipher = Cipher.getInstance(\"AES/ECB/NoPadding\");",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "PRO"
+      }
+    },
+    {
+      "check_id": "html.security.plaintext-http-link.plaintext-http-link",
+      "path": "src/main/javadoc/overview.html",
+      "start": {
+        "line": 24,
+        "col": 1,
+        "offset": 923
+      },
+      "end": {
+        "line": 24,
+        "col": 100,
+        "offset": 1022
+      },
+      "extra": {
+        "metavars": {
+          "$URL": {
+            "start": {
+              "line": 24,
+              "col": 10,
+              "offset": 932
+            },
+            "end": {
+              "line": 24,
+              "col": 91,
+              "offset": 1013
+            },
+            "abstract_content": "http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf"
+          }
+        },
+        "message": "This link points to a plaintext HTTP URL. Prefer an encrypted HTTPS URL if possible.",
+        "metadata": {
+          "category": "security",
+          "technology": [
+            "html"
+          ],
+          "cwe": [
+            "CWE-319: Cleartext Transmission of Sensitive Information"
+          ],
+          "owasp": [
+            "A03:2017 - Sensitive Data Exposure",
+            "A02:2021 - Cryptographic Failures",
+            "A04:2025 - Cryptographic Failures"
+          ],
+          "confidence": "HIGH",
+          "subcategory": [
+            "vuln"
+          ],
+          "references": [
+            "https://cwe.mitre.org/data/definitions/319.html"
+          ],
+          "likelihood": "LOW",
+          "impact": "LOW",
+          "license": "Semgrep Rules License v1.0. For more details, visit semgrep.dev/legal/rules-license",
+          "vulnerability_class": [
+            "Mishandled Sensitive Information"
+          ],
+          "source": "https://semgrep.dev/r/html.security.plaintext-http-link.plaintext-http-link",
+          "shortlink": "https://sg.run/RA5q",
+          "semgrep.dev": {
+            "rule": {
+              "origin": "community",
+              "r_id": 39193,
+              "rule_id": "AbUnNo",
+              "rule_name": "html.security.plaintext-http-link.plaintext-http-link",
+              "rv_id": 1262976,
+              "url": "https://semgrep.dev/playground/r/xyTjzRL/html.security.plaintext-http-link.plaintext-http-link",
+              "version_id": "xyTjzRL"
+            },
+            "src": "new-rule"
+          },
+          "dev.semgrep.actions": [
+            "monitor"
+          ],
+          "semgrep.policy": {
+            "id": 271716,
+            "name": "Rule Board - Audit column",
+            "slug": "rule-board-audit"
+          },
+          "semgrep.url": "https://semgrep.dev/r/html.security.plaintext-http-link.plaintext-http-link",
+          "semgrep.ruleset": "default",
+          "semgrep.ruleset_id": 3471
+        },
+        "severity": "WARNING",
+        "fingerprint": "8a0171369dae822ca47a766be108e8491a49fe826523e65cc3399b0a46d32d579afae14909eb7918c2aef4d3d2ac0c4c19bf99aeaa1ccd6e4e9885ad39eb3306_0",
+        "lines": "<a href=\"http://wwwimages.adobe.com/content/dam/Adobe/en/devnet/pdf/pdfs/PDF32000_2008.pdf\">PDF</a> documents.</p>",
+        "is_ignored": false,
+        "validation_state": "NO_VALIDATOR",
+        "engine_kind": "PRO"
+      }
+    }
+  ],
+  "errors": [],
+  "paths": {
+    "scanned": [
+      "all_third_party_call_pairs_all_third_party_calls.json",
+      "coverage.json",
+      "coverage_check_results_pdfbox_all_tests.txt",
+      "coverage_check_results_pdfbox_existing_tests.txt",
+      "package-map.json",
+      "pom.xml",
+      "src/main/appended-resources/META-INF/LICENSE",
+      "src/main/appended-resources/META-INF/NOTICE",
+      "src/main/java/org/apache/pdfbox/Loader.java",
+      "src/main/java/org/apache/pdfbox/contentstream/PDContentStream.java",
+      "src/main/java/org/apache/pdfbox/contentstream/PDFGraphicsStreamEngine.java",
+      "src/main/java/org/apache/pdfbox/contentstream/PDFStreamEngine.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/DrawObject.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/MissingOperandException.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/Operator.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/OperatorName.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/OperatorProcessor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetColor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetNonStrokingColor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetNonStrokingColorN.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetNonStrokingColorSpace.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetNonStrokingDeviceCMYKColor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetNonStrokingDeviceGrayColor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetNonStrokingDeviceRGBColor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetStrokingColor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetStrokingColorN.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetStrokingColorSpace.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetStrokingDeviceCMYKColor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetStrokingDeviceGrayColor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/color/SetStrokingDeviceRGBColor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/AppendRectangleToPath.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/BeginInlineImage.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/ClipEvenOddRule.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/ClipNonZeroRule.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CloseAndStrokePath.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CloseFillEvenOddAndStrokePath.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CloseFillNonZeroAndStrokePath.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/ClosePath.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveTo.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveToReplicateFinalPoint.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/CurveToReplicateInitialPoint.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/DrawObject.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/EndPath.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/FillEvenOddAndStrokePath.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/FillEvenOddRule.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/FillNonZeroAndStrokePath.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/FillNonZeroRule.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/GraphicsOperatorProcessor.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/LegacyFillNonZeroRule.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/LineTo.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/MoveTo.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/ShadingFill.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/StrokePath.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/graphics/package.html",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/markedcontent/BeginMarkedContentSequence.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/markedcontent/BeginMarkedContentSequenceWithProperties.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/markedcontent/DrawObject.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/markedcontent/EndMarkedContentSequence.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/markedcontent/MarkedContentPoint.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/markedcontent/MarkedContentPointWithProperties.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/package.html",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/Concatenate.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/EmptyGraphicsStackException.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/Restore.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/Save.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/SetFlatness.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/SetGraphicsStateParameters.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/SetLineCapStyle.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/SetLineDashPattern.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/SetLineJoinStyle.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/SetLineMiterLimit.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/SetLineWidth.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/SetMatrix.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/state/SetRenderingIntent.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/BeginText.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/EndText.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/MoveText.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/MoveTextSetLeading.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/NextLine.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/SetCharSpacing.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/SetFontAndSize.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/SetTextHorizontalScaling.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/SetTextLeading.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/SetTextRenderingMode.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/SetTextRise.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/SetWordSpacing.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/ShowText.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/ShowTextAdjusted.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/ShowTextLine.java",
+      "src/main/java/org/apache/pdfbox/contentstream/operator/text/ShowTextLineAndSpace.java",
+      "src/main/java/org/apache/pdfbox/contentstream/package.html",
+      "src/main/java/org/apache/pdfbox/cos/COSArray.java",
+      "src/main/java/org/apache/pdfbox/cos/COSBase.java",
+      "src/main/java/org/apache/pdfbox/cos/COSBoolean.java",
+      "src/main/java/org/apache/pdfbox/cos/COSDictionary.java",
+      "src/main/java/org/apache/pdfbox/cos/COSDocument.java",
+      "src/main/java/org/apache/pdfbox/cos/COSDocumentState.java",
+      "src/main/java/org/apache/pdfbox/cos/COSFloat.java",
+      "src/main/java/org/apache/pdfbox/cos/COSIncrement.java",
+      "src/main/java/org/apache/pdfbox/cos/COSInputStream.java",
+      "src/main/java/org/apache/pdfbox/cos/COSInteger.java",
+      "src/main/java/org/apache/pdfbox/cos/COSName.java",
+      "src/main/java/org/apache/pdfbox/cos/COSNull.java",
+      "src/main/java/org/apache/pdfbox/cos/COSNumber.java",
+      "src/main/java/org/apache/pdfbox/cos/COSObject.java",
+      "src/main/java/org/apache/pdfbox/cos/COSObjectKey.java",
+      "src/main/java/org/apache/pdfbox/cos/COSOutputStream.java",
+      "src/main/java/org/apache/pdfbox/cos/COSStream.java",
+      "src/main/java/org/apache/pdfbox/cos/COSString.java",
+      "src/main/java/org/apache/pdfbox/cos/COSUpdateInfo.java",
+      "src/main/java/org/apache/pdfbox/cos/COSUpdateState.java",
+      "src/main/java/org/apache/pdfbox/cos/ICOSParser.java",
+      "src/main/java/org/apache/pdfbox/cos/ICOSVisitor.java",
+      "src/main/java/org/apache/pdfbox/cos/PDFDocEncoding.java",
+      "src/main/java/org/apache/pdfbox/cos/UnmodifiableCOSDictionary.java",
+      "src/main/java/org/apache/pdfbox/cos/package.html",
+      "src/main/java/org/apache/pdfbox/filter/ASCII85Filter.java",
+      "src/main/java/org/apache/pdfbox/filter/ASCII85InputStream.java",
+      "src/main/java/org/apache/pdfbox/filter/ASCII85OutputStream.java",
+      "src/main/java/org/apache/pdfbox/filter/ASCIIHexFilter.java",
+      "src/main/java/org/apache/pdfbox/filter/CCITTFaxDecoderStream.java",
+      "src/main/java/org/apache/pdfbox/filter/CCITTFaxEncoderStream.java",
+      "src/main/java/org/apache/pdfbox/filter/CCITTFaxFilter.java",
+      "src/main/java/org/apache/pdfbox/filter/CryptFilter.java",
+      "src/main/java/org/apache/pdfbox/filter/DCTFilter.java",
+      "src/main/java/org/apache/pdfbox/filter/DecodeOptions.java",
+      "src/main/java/org/apache/pdfbox/filter/DecodeResult.java",
+      "src/main/java/org/apache/pdfbox/filter/Filter.java",
+      "src/main/java/org/apache/pdfbox/filter/FilterFactory.java",
+      "src/main/java/org/apache/pdfbox/filter/FlateFilter.java",
+      "src/main/java/org/apache/pdfbox/filter/FlateFilterDecoderStream.java",
+      "src/main/java/org/apache/pdfbox/filter/IdentityFilter.java",
+      "src/main/java/org/apache/pdfbox/filter/JBIG2Filter.java",
+      "src/main/java/org/apache/pdfbox/filter/JPXFilter.java",
+      "src/main/java/org/apache/pdfbox/filter/LZWFilter.java",
+      "src/main/java/org/apache/pdfbox/filter/MissingImageReaderException.java",
+      "src/main/java/org/apache/pdfbox/filter/Predictor.java",
+      "src/main/java/org/apache/pdfbox/filter/RunLengthDecodeFilter.java",
+      "src/main/java/org/apache/pdfbox/filter/TIFFExtension.java",
+      "src/main/java/org/apache/pdfbox/filter/package.html",
+      "src/main/java/org/apache/pdfbox/multipdf/LayerUtility.java",
+      "src/main/java/org/apache/pdfbox/multipdf/Overlay.java",
+      "src/main/java/org/apache/pdfbox/multipdf/PDFCloneUtility.java",
+      "src/main/java/org/apache/pdfbox/multipdf/PDFMergerUtility.java",
+      "src/main/java/org/apache/pdfbox/multipdf/PageExtractor.java",
+      "src/main/java/org/apache/pdfbox/multipdf/Splitter.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/BaseParser.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/BruteForceParser.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/COSParser.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/EndstreamFilterStream.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/FDFParser.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/PDFObjectStreamParser.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/PDFParser.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/PDFStreamParser.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/PDFXRefStream.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/PDFXrefStreamParser.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/XrefTrailerResolver.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/package.html",
+      "src/main/java/org/apache/pdfbox/pdfparser/xref/AbstractXReference.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/xref/FreeXReference.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/xref/NormalXReference.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/xref/ObjectStreamXReference.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/xref/XReferenceEntry.java",
+      "src/main/java/org/apache/pdfbox/pdfparser/xref/XReferenceType.java",
+      "src/main/java/org/apache/pdfbox/pdfwriter/COSStandardOutputStream.java",
+      "src/main/java/org/apache/pdfbox/pdfwriter/COSWriter.java",
+      "src/main/java/org/apache/pdfbox/pdfwriter/ContentStreamWriter.java",
+      "src/main/java/org/apache/pdfbox/pdfwriter/compress/COSObjectPool.java",
+      "src/main/java/org/apache/pdfbox/pdfwriter/compress/COSWriterCompressionPool.java",
+      "src/main/java/org/apache/pdfbox/pdfwriter/compress/COSWriterObjectStream.java",
+      "src/main/java/org/apache/pdfbox/pdfwriter/compress/CompressParameters.java",
+      "src/main/java/org/apache/pdfbox/pdfwriter/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/DefaultResourceCache.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/DefaultResourceCacheCreateImpl.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/MissingResourceException.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDAbstractContentStream.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDAppearanceContentStream.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDDestinationNameTreeNode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDDocument.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDDocumentCatalog.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDDocumentInformation.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDDocumentNameDestinationDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDDocumentNameDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDEmbeddedFilesNameTreeNode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDFormContentStream.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDJavascriptNameTreeNode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDPage.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDPageContentStream.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDPageTree.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDPatternContentStream.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDResources.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PDStructureElementNameTreeNode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PageLayout.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/PageMode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/ResourceCache.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/ResourceCacheCreateFunction.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/ResourceCacheFactory.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/COSArrayList.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/COSDictionaryMap.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/COSObjectable.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDDestinationOrAction.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDDictionaryWrapper.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDImmutableRectangle.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDMetadata.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDNameTreeNode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDNumberTreeNode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDObjectStream.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDPageLabelRange.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDPageLabels.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDRange.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDRectangle.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDStream.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/PDTypedDictionaryWrapper.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/filespecification/PDComplexFileSpecification.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/filespecification/PDEmbeddedFile.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/filespecification/PDFileSpecification.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/filespecification/PDSimpleFileSpecification.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/filespecification/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunction.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType0.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType2.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType3.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionType4.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/PDFunctionTypeIdentity.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/ArithmeticOperators.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/BitwiseOperators.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/ConditionalOperators.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/ExecutionContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/InstructionSequence.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/InstructionSequenceBuilder.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/Operator.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/Operators.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/Parser.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/RelationalOperators.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/StackOperators.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/function/type4/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/common/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDAttributeObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDDefaultAttributeObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDMarkInfo.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDMarkedContentReference.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDObjectReference.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDParentTreeValue.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureElement.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureNode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDStructureTreeRoot.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDUserAttributeObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/PDUserProperty.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/Revisions.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/logicalstructure/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/markedcontent/PDMarkedContent.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/markedcontent/PDPropertyList.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/markedcontent/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/prepress/PDBoxStyle.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/prepress/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/PDArtifactMarkedContent.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/PDExportFormatAttributeObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/PDFourColours.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/PDLayoutAttributeObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/PDListAttributeObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/PDPrintFieldAttributeObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/PDStandardAttributeObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/PDTableAttributeObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/StandardStructureTypes.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/documentinterchange/taggedpdf/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/AccessPermission.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/DecryptionMaterial.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/InvalidPasswordException.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/MessageDigests.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/PDCryptFilterDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/PDEncryption.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/ProtectionPolicy.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/PublicKeyDecryptionMaterial.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/PublicKeyProtectionPolicy.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/PublicKeyRecipient.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/PublicKeySecurityHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/RC4Cipher.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/SaslPrep.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityHandlerFactory.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/SecurityProvider.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardDecryptionMaterial.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardProtectionPolicy.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/StandardSecurityHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/encryption/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotation.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationCaret.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationCircle.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationFileAttachment.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationFreeText.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationHighlight.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationInk.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationLine.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationLink.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolygon.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationPolyline.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationSound.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationSquare.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationSquiggly.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationStamp.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationStrikeOut.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationText.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationTextMarkup.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFAnnotationUnderline.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFCatalog.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDocument.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFField.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFIconFit.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFJavaScript.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFNamedPageReference.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFOptionElement.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFPage.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFPageInfo.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFTemplate.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fdf/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/fixup/AbstractFixup.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fixup/AcroFormDefaultFixup.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fixup/PDDocumentFixup.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fixup/processor/AbstractProcessor.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fixup/processor/AcroFormDefaultsProcessor.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fixup/processor/AcroFormGenerateAppearancesProcessor.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fixup/processor/AcroFormOrphanWidgetsProcessor.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/fixup/processor/PDDocumentProcessor.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/CIDFontMapping.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/CIDSystemInfo.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/CMapManager.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/FileSystemFontProvider.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/FontCache.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/FontFormat.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/FontInfo.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/FontMapper.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/FontMapperImpl.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/FontMappers.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/FontMapping.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/FontProvider.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFont.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType0.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType2.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDFontType2Embedder.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDCIDSystemInfo.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDFont.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDFontDescriptor.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDFontFactory.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDFontLike.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDMMType1Font.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDPanose.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDPanoseClassification.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDSimpleFont.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDTrueTypeFont.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDTrueTypeFontEmbedder.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDType0Font.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDType1CFont.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDType1Font.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDType1FontEmbedder.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDType3CharProc.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDType3Font.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/PDVectorFont.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/Standard14Fonts.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/Subsetter.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/ToUnicodeWriter.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/TrueTypeEmbedder.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/UniUtil.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/BuiltInEncoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/DictionaryEncoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/Encoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/GlyphList.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/MacExpertEncoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/MacOSRomanEncoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/MacRomanEncoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/StandardEncoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/SymbolEncoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/Type1Encoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/WinAnsiEncoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/encoding/ZapfDingbatsEncoding.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/font/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/PDFontSetting.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/PDLineDashPattern.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/PDPostScriptXObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/PDXObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/blend/BlendComposite.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/blend/BlendMode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDCIEBasedColorSpace.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDCIEDictionaryBasedColorSpace.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDCalGray.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDCalRGB.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDColor.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDColorSpace.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDDeviceCMYK.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDDeviceColorSpace.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDDeviceGray.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDDeviceN.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDDeviceNAttributes.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDDeviceNProcess.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDDeviceRGB.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDGamma.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDICCBased.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDIndexed.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDJPXColorSpace.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDLab.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDOutputIntent.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDPattern.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDSeparation.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDSpecialColorSpace.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/PDTristimulus.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/color/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/form/PDFormXObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/form/PDTransparencyGroup.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/form/PDTransparencyGroupAttributes.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/form/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/CCITTFactory.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/CustomFactory.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/JPEGFactory.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/LosslessFactory.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PDImage.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PDImageXObject.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PDInlineImage.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PNGConverter.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/SampledImageReader.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/optionalcontent/PDOptionalContentGroup.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/optionalcontent/PDOptionalContentMembershipDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/optionalcontent/PDOptionalContentProperties.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/pattern/PDAbstractPattern.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/pattern/PDShadingPattern.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/pattern/PDTilingPattern.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/pattern/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/AxialShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/AxialShadingPaint.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/CoonsPatch.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/CoordinateColorPair.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/CubicBezierCurve.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/GouraudShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/IntPoint.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Line.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDMeshBasedShadingType.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShading.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingType1.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingType2.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingType3.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingType4.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingType5.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingType6.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingType7.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDTriangleBasedShadingType.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Patch.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PatchMeshesShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/RadialShadingPaint.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/ShadedTriangle.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/ShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/ShadingPaint.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/TensorPatch.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/TriangleBasedShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type1ShadingPaint.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type4ShadingPaint.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type5ShadingPaint.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type6ShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type6ShadingPaint.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type7ShadingContext.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Type7ShadingPaint.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/Vertex.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/state/PDExtendedGraphicsState.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/state/PDGraphicsState.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/state/PDSoftMask.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/state/PDTextState.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/state/RenderingIntent.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/state/RenderingMode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/graphics/state/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/OpenMode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDAction.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionEmbeddedGoTo.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionFactory.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionGoTo.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionHide.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionImportData.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionJavaScript.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionLaunch.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionMovie.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionNamed.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionRemoteGoTo.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionResetForm.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionSound.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionSubmitForm.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionThread.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDActionURI.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDAdditionalActions.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDAnnotationAdditionalActions.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDDocumentCatalogAdditionalActions.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDFormFieldAdditionalActions.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDPageAdditionalActions.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDTargetDirectory.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDURIDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/PDWindowsLaunchParams.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/action/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/AnnotationFilter.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotation.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationCaret.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationCircle.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationFileAttachment.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationFreeText.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationHighlight.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationInk.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationLine.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationLink.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationMarkup.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationPolygon.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationPolyline.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationPopup.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationRubberStamp.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationSound.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationSquare.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationSquareCircle.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationSquiggly.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationStrikeout.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationText.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationTextMarkup.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationUnderline.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationUnknown.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAnnotationWidget.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAppearanceCharacteristicsDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAppearanceDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAppearanceEntry.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDAppearanceStream.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDBorderEffectDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDBorderStyleDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/PDExternalDataDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/AnnotationBorder.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/CloudyBorder.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDAbstractAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDCaretAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDCircleAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDFileAttachmentAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDFreeTextAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDHighlightAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDInkAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDLineAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDLinkAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDPolygonAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDPolylineAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDSoundAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDSquareAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDSquigglyAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDStrikeoutAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDTextAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/handlers/PDUnderlineAppearanceHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/layout/AppearanceStyle.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/layout/PlainText.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/layout/PlainTextFormatter.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/annotation/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/COSFilterInputStream.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/ExternalSigningSupport.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/PDPropBuild.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/PDPropBuildDataDict.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/PDSeedValue.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/PDSeedValueCertificate.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/PDSeedValueMDP.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/PDSeedValueTimeStamp.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/PDSignature.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/SignatureInterface.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/SignatureOptions.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/SigningSupport.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateBuilder.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateCreator.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDFTemplateStructure.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigBuilder.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSigProperties.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/PDVisibleSignDesigner.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/digitalsignature/visible/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/PDDestination.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/PDNamedDestination.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageDestination.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageFitDestination.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageFitHeightDestination.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageFitRectangleDestination.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageFitWidthDestination.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/PDPageXYZDestination.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/destination/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/outline/PDDocumentOutline.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/outline/PDOutlineItem.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/outline/PDOutlineItemIterator.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/outline/PDOutlineNode.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/outline/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/documentnavigation/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/AppearanceStyle.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/FieldUtils.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDAcroForm.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDButton.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDCheckBox.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDChoice.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDComboBox.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDDefaultAppearanceString.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDField.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDFieldFactory.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDFieldTree.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDListBox.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDNonTerminalField.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDPushButton.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDRadioButton.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDSignatureField.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDTerminalField.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDTextField.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDVariableText.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PDXFAResource.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PlainText.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/PlainTextFormatter.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/ScriptingHandler.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/measurement/PDMeasureDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/measurement/PDNumberFormatDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/measurement/PDRectlinearMeasureDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/measurement/PDViewportDictionary.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/measurement/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/pagenavigation/PDThread.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/pagenavigation/PDThreadBead.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/pagenavigation/PDTransition.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/pagenavigation/PDTransitionDimension.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/pagenavigation/PDTransitionDirection.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/pagenavigation/PDTransitionMotion.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/pagenavigation/PDTransitionStyle.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/pagenavigation/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/viewerpreferences/PDViewerPreferences.java",
+      "src/main/java/org/apache/pdfbox/pdmodel/interactive/viewerpreferences/package.html",
+      "src/main/java/org/apache/pdfbox/pdmodel/package.html",
+      "src/main/java/org/apache/pdfbox/printing/Orientation.java",
+      "src/main/java/org/apache/pdfbox/printing/PDFPageable.java",
+      "src/main/java/org/apache/pdfbox/printing/PDFPrintable.java",
+      "src/main/java/org/apache/pdfbox/printing/Scaling.java",
+      "src/main/java/org/apache/pdfbox/rendering/GlyphCache.java",
+      "src/main/java/org/apache/pdfbox/rendering/GroupGraphics.java",
+      "src/main/java/org/apache/pdfbox/rendering/ImageType.java",
+      "src/main/java/org/apache/pdfbox/rendering/PDFRenderer.java",
+      "src/main/java/org/apache/pdfbox/rendering/PageDrawer.java",
+      "src/main/java/org/apache/pdfbox/rendering/PageDrawerParameters.java",
+      "src/main/java/org/apache/pdfbox/rendering/RenderDestination.java",
+      "src/main/java/org/apache/pdfbox/rendering/SoftMask.java",
+      "src/main/java/org/apache/pdfbox/rendering/TilingPaint.java",
+      "src/main/java/org/apache/pdfbox/rendering/TilingPaintFactory.java",
+      "src/main/java/org/apache/pdfbox/text/LegacyPDFStreamEngine.java",
+      "src/main/java/org/apache/pdfbox/text/PDFMarkedContentExtractor.java",
+      "src/main/java/org/apache/pdfbox/text/PDFTextStripper.java",
+      "src/main/java/org/apache/pdfbox/text/PDFTextStripperByArea.java",
+      "src/main/java/org/apache/pdfbox/text/TextPosition.java",
+      "src/main/java/org/apache/pdfbox/text/TextPositionComparator.java",
+      "src/main/java/org/apache/pdfbox/util/DateConverter.java",
+      "src/main/java/org/apache/pdfbox/util/Hex.java",
+      "src/main/java/org/apache/pdfbox/util/IterativeMergeSort.java",
+      "src/main/java/org/apache/pdfbox/util/Matrix.java",
+      "src/main/java/org/apache/pdfbox/util/NumberFormatUtil.java",
+      "src/main/java/org/apache/pdfbox/util/SmallMap.java",
+      "src/main/java/org/apache/pdfbox/util/StringUtil.java",
+      "src/main/java/org/apache/pdfbox/util/Vector.java",
+      "src/main/java/org/apache/pdfbox/util/Version.java",
+      "src/main/java/org/apache/pdfbox/util/XMLUtil.java",
+      "src/main/java/org/apache/pdfbox/util/filetypedetector/ByteTrie.java",
+      "src/main/java/org/apache/pdfbox/util/filetypedetector/FileType.java",
+      "src/main/java/org/apache/pdfbox/util/filetypedetector/FileTypeDetector.java",
+      "src/main/java/org/apache/pdfbox/util/package.html",
+      "src/main/javadoc/overview.html",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Courier-Bold.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Courier-BoldOblique.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Courier-Oblique.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Courier.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Helvetica-Bold.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Helvetica-BoldOblique.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Helvetica-Oblique.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Helvetica.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/MustRead.html",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Symbol.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Times-Bold.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Times-BoldItalic.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Times-Italic.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/Times-Roman.afm",
+      "src/main/resources/org/apache/pdfbox/resources/afm/ZapfDingbats.afm",
+      "src/main/resources/org/apache/pdfbox/resources/glyphlist/additional.txt",
+      "src/main/resources/org/apache/pdfbox/resources/glyphlist/glyphlist.txt",
+      "src/main/resources/org/apache/pdfbox/resources/glyphlist/zapfdingbats.txt",
+      "src/main/resources/org/apache/pdfbox/resources/icc/CGATS001Compat-v2-micro.icc",
+      "src/main/resources/org/apache/pdfbox/resources/text/BidiMirroring.txt",
+      "src/main/resources/org/apache/pdfbox/resources/ttf/LiberationSans-Regular.ttf",
+      "src/main/resources/org/apache/pdfbox/resources/version.properties"
+    ]
+  },
+  "time": {
+    "rules": [],
+    "rules_parse_time": 12.550458908081055,
+    "profiling_times": {
+      "config_time": 33.92111086845398,
+      "core_time": 68.10238313674927,
+      "ignores_time": 0.1478409767150879,
+      "total_time": 102.2016670703888
+    },
+    "parsing_time": {
+      "total_time": 0.0,
+      "per_file_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_files": []
+    },
+    "scanning_time": {
+      "total_time": 0.0,
+      "per_file_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_files": []
+    },
+    "matching_time": {
+      "total_time": 0.0,
+      "per_file_and_rule_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_rules_on_files": []
+    },
+    "tainting_time": {
+      "total_time": 0.0,
+      "per_def_and_rule_time": {
+        "mean": 0.0,
+        "std_dev": 0.0
+      },
+      "very_slow_stats": {
+        "time_ratio": 0.0,
+        "count_ratio": 0.0
+      },
+      "very_slow_rules_on_defs": []
+    },
+    "fixpoint_timeouts": [
+      {
+        "error_type": "Fixpoint timeout",
+        "severity": "warn",
+        "message": "Fixpoint timeout while performing taint analysis at src/main/java/org/apache/pdfbox/multipdf/PDFMergerUtility.java:510:16 [rules: 1, first: java.spring.security.injection.tainted-system-command.tainted-system-command]",
+        "location": {
+          "path": "src/main/java/org/apache/pdfbox/multipdf/PDFMergerUtility.java",
+          "start": {
+            "line": 510,
+            "col": 17,
+            "offset": 18829
+          },
+          "end": {
+            "line": 510,
+            "col": 31,
+            "offset": 18843
+          }
+        }
+      },
+      {
+        "error_type": "Fixpoint timeout",
+        "severity": "warn",
+        "message": "Fixpoint timeout while performing taint analysis at src/main/java/org/apache/pdfbox/pdmodel/encryption/PublicKeySecurityHandler.java:120:16 [rules: 12, first: java.spring.security.injection.tainted-url-host.tainted-url-host]",
+        "location": {
+          "path": "src/main/java/org/apache/pdfbox/pdmodel/encryption/PublicKeySecurityHandler.java",
+          "start": {
+            "line": 120,
+            "col": 17,
+            "offset": 4605
+          },
+          "end": {
+            "line": 120,
+            "col": 37,
+            "offset": 4625
+          }
+        }
+      },
+      {
+        "error_type": "Fixpoint timeout",
+        "severity": "warn",
+        "message": "Fixpoint timeout while performing taint analysis at src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDictionary.java:74:11 [rules: 28, first: java.spring.security.spring-sqli-deepsemgrep.spring-sqli-deepsemgrep]",
+        "location": {
+          "path": "src/main/java/org/apache/pdfbox/pdmodel/fdf/FDFDictionary.java",
+          "start": {
+            "line": 74,
+            "col": 12,
+            "offset": 2348
+          },
+          "end": {
+            "line": 74,
+            "col": 25,
+            "offset": 2361
+          }
+        }
+      },
+      {
+        "error_type": "Fixpoint timeout",
+        "severity": "warn",
+        "message": "Fixpoint timeout while performing taint analysis at src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PNGConverter.java:765:37 [rules: 1, first: java.spring.security.injection.tainted-system-command.tainted-system-command]",
+        "location": {
+          "path": "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/PNGConverter.java",
+          "start": {
+            "line": 765,
+            "col": 38,
+            "offset": 26275
+          },
+          "end": {
+            "line": 765,
+            "col": 52,
+            "offset": 26289
+          }
+        }
+      },
+      {
+        "error_type": "Fixpoint timeout",
+        "severity": "warn",
+        "message": "Fixpoint timeout while performing taint analysis at src/main/java/org/apache/pdfbox/pdmodel/graphics/image/SampledImageReader.java:553:33 [rules: 1, first: java.lang.security.audit.tainted-cmd-from-http-request.tainted-cmd-from-http-request]",
+        "location": {
+          "path": "src/main/java/org/apache/pdfbox/pdmodel/graphics/image/SampledImageReader.java",
+          "start": {
+            "line": 553,
+            "col": 34,
+            "offset": 23880
+          },
+          "end": {
+            "line": 553,
+            "col": 41,
+            "offset": 23887
+          }
+        }
+      },
+      {
+        "error_type": "Fixpoint timeout",
+        "severity": "warn",
+        "message": "Fixpoint timeout while performing taint analysis at src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingType4.java:92:25 [rules: 1, first: java.spring.security.injection.tainted-file-path.tainted-file-path]",
+        "location": {
+          "path": "src/main/java/org/apache/pdfbox/pdmodel/graphics/shading/PDShadingType4.java",
+          "start": {
+            "line": 92,
+            "col": 26,
+            "offset": 2892
+          },
+          "end": {
+            "line": 92,
+            "col": 42,
+            "offset": 2908
+          }
+        }
+      },
+      {
+        "error_type": "Fixpoint timeout",
+        "severity": "warn",
+        "message": "Fixpoint timeout while performing taint analysis at src/main/java/org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java:480:17 [rules: 1, first: java.spring.security.injection.tainted-system-command.tainted-system-command]",
+        "location": {
+          "path": "src/main/java/org/apache/pdfbox/pdmodel/interactive/form/AppearanceGeneratorHelper.java",
+          "start": {
+            "line": 480,
+            "col": 18,
+            "offset": 19585
+          },
+          "end": {
+            "line": 480,
+            "col": 43,
+            "offset": 19610
+          }
+        }
+      }
+    ],
+    "prefiltering": {
+      "project_level_time": 0.0,
+      "file_level_time": 0.0,
+      "rules_with_project_prefilters_ratio": 0.0,
+      "rules_with_file_prefilters_ratio": 0.0,
+      "rules_selected_ratio": 0.0,
+      "rules_matched_ratio": 0.0
+    },
+    "targets": [],
+    "total_bytes": 0,
+    "max_memory_bytes": 10827103872
+  },
+  "engine_requested": "PRO",
+  "interfile_languages_used": [],
+  "skipped_rules": [],
+  "subprojects": [
+    {
+      "dependency_sources": [
+        "pom.xml"
+      ],
+      "resolved": true,
+      "resolved_stats": {
+        "resolution_method": "DynamicResolution",
+        "dependency_count": 26,
+        "ecosystem": "maven"
+      }
+    }
+  ],
+  "profiling_results": []
+}

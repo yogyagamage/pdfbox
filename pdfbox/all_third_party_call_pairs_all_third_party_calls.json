@@ -1,0 +1,1794 @@
+{
+  "callPairs" : [ {
+    "caller" : "org.apache.pdfbox.contentstream.PDFStreamEngine.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.PDFStreamEngine.decreaseLevel()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.PDFStreamEngine.operatorException(org.apache.pdfbox.contentstream.operator.Operator, java.util.List, java.io.IOException)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.PDFStreamEngine.operatorException(org.apache.pdfbox.contentstream.operator.Operator, java.util.List, java.io.IOException)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.PDFStreamEngine.showText(byte[])",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.PDFStreamEngine.showTextStrings(org.apache.pdfbox.cos.COSArray)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.DrawObject.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.DrawObject.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.ClosePath.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.ClosePath.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.CurveTo.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.CurveTo.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.CurveToReplicateFinalPoint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.CurveToReplicateFinalPoint.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.CurveToReplicateInitialPoint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.CurveToReplicateInitialPoint.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.DrawObject.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.DrawObject.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.LineTo.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.graphics.LineTo.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.markedcontent.DrawObject.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.markedcontent.DrawObject.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.state.SetGraphicsStateParameters.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.state.SetGraphicsStateParameters.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.state.SetLineDashPattern.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.state.SetLineDashPattern.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.text.MoveText.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.text.MoveText.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.text.SetFontAndSize.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.contentstream.operator.text.SetFontAndSize.process(org.apache.pdfbox.contentstream.operator.Operator, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.cos.COSDictionary.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.cos.COSDictionary.toString()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.cos.COSDocument.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.cos.COSDocument.getStreamCache(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.cos.COSObject.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.cos.COSObject.getObject()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.cos.COSStream.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.cos.COSStream.toTextString()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.cos.COSString.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.cos.COSString.parseHex(java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.ASCIIHexFilter.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.ASCIIHexFilter.decode(java.io.InputStream, java.io.OutputStream, org.apache.pdfbox.cos.COSDictionary, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.DCTFilter.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.DCTFilter.decode(java.io.InputStream, java.io.OutputStream, org.apache.pdfbox.cos.COSDictionary, int, org.apache.pdfbox.filter.DecodeOptions)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.DCTFilter.decode(java.io.InputStream, java.io.OutputStream, org.apache.pdfbox.cos.COSDictionary, int, org.apache.pdfbox.filter.DecodeOptions)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.DCTFilter.getAdobeTransform(javax.imageio.metadata.IIOMetadata)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.DCTFilter.getNumChannels(javax.imageio.ImageReader)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.DCTFilter.readImageRaster(javax.imageio.ImageReader, javax.imageio.ImageReadParam)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.Filter.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.Filter.decode(java.io.InputStream, java.util.List, org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.filter.DecodeOptions, java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.Filter.getCompressionLevel()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.Filter.getDecodeParams(org.apache.pdfbox.cos.COSDictionary, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.FlateFilterDecoderStream.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.FlateFilterDecoderStream.fetch()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.JBIG2Filter.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.JBIG2Filter.decode(java.io.InputStream, java.io.OutputStream, org.apache.pdfbox.cos.COSDictionary, int, org.apache.pdfbox.filter.DecodeOptions)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.JBIG2Filter.logLevigoDonated()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.LZWFilter.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.filter.LZWFilter.doLZWDecode(java.io.InputStream, java.io.OutputStream, boolean)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.LayerUtility.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.LayerUtility.appendFormAsLayer(org.apache.pdfbox.pdmodel.PDPage, org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject, java.awt.geom.AffineTransform, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.Overlay.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.Overlay.calculateAffineTransform(org.apache.pdfbox.pdmodel.PDPage, org.apache.pdfbox.pdmodel.common.PDRectangle)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.Overlay.calculateAffineTransform(org.apache.pdfbox.pdmodel.PDPage, org.apache.pdfbox.pdmodel.common.PDRectangle)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFCloneUtility.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFCloneUtility.hasSelfReference(org.apache.pdfbox.cos.COSBase, org.apache.pdfbox.cos.COSBase)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFMergerUtility.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFMergerUtility.appendDocument(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.PDDocument)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFMergerUtility.appendDocument(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.PDDocument)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFMergerUtility.appendDocument(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.PDDocument)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFMergerUtility.mergeIDTree(org.apache.pdfbox.multipdf.PDFCloneUtility, org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureTreeRoot, org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureTreeRoot)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFMergerUtility.mergeOpenAction(org.apache.pdfbox.pdmodel.PDDocumentCatalog, org.apache.pdfbox.pdmodel.PDDocumentCatalog, org.apache.pdfbox.multipdf.PDFCloneUtility)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFMergerUtility.mergeOpenAction(org.apache.pdfbox.pdmodel.PDDocumentCatalog, org.apache.pdfbox.pdmodel.PDDocumentCatalog, org.apache.pdfbox.multipdf.PDFCloneUtility)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFMergerUtility.mergeRoleMap(org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureTreeRoot, org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureTreeRoot, org.apache.pdfbox.multipdf.PDFCloneUtility)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.PDFMergerUtility.updatePageReferences(org.apache.pdfbox.multipdf.PDFCloneUtility, org.apache.pdfbox.cos.COSDictionary, java.util.Map)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.Splitter.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.Splitter.KCloner.removePossibleOrphanAnnotation(org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.Splitter.cloneTreeElement(java.util.Map, java.util.Map, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.Splitter.createNewDocument()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.Splitter.processAnnotations(org.apache.pdfbox.pdmodel.PDPage)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.Splitter.processPage(org.apache.pdfbox.pdmodel.PDPage)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.multipdf.Splitter.processPage(org.apache.pdfbox.pdmodel.PDPage)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BaseParser.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BaseParser.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BaseParser.decodeBuffer(java.io.ByteArrayOutputStream)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BaseParser.parseCOSArray()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BaseParser.parseCOSDictionary(boolean)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BaseParser.parseCOSDictionaryNameValuePair(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BaseParser.parseCOSDictionaryValue()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BaseParser.parseCOSDictionaryValue()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BaseParser.parseCOSName()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BaseParser.parseDirObject()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BruteForceParser.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BruteForceParser.bfSearchForLastEOFMarker()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BruteForceParser.bfSearchForObjStreamOffsets()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BruteForceParser.bfSearchForObjStreams(org.apache.pdfbox.pdfparser.XrefTrailerResolver, org.apache.pdfbox.pdmodel.encryption.SecurityHandler)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BruteForceParser.bfSearchForTrailer(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BruteForceParser.bfSearchForXRefStreams()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.BruteForceParser.lambda.bfSearchForObjStreams(java.util.Map.Entry)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.calculateXRefFixedOffset(long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.calculateXRefFixedOffset(long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.checkPagesDictionary(org.apache.pdfbox.cos.COSDictionary, java.util.Set)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.checkXRefStreamOffset(long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.checkXrefOffsets()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.findObjectKey(org.apache.pdfbox.cos.COSObjectKey, long, java.util.Map)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.findObjectKey(org.apache.pdfbox.cos.COSObjectKey, long, java.util.Map)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.findObjectKey(org.apache.pdfbox.cos.COSObjectKey, long, java.util.Map)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.getLength(org.apache.pdfbox.cos.COSBase)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.getObjectOffset(org.apache.pdfbox.cos.COSObjectKey, boolean)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.getStartxrefOffset()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.init(org.apache.pdfbox.io.RandomAccessStreamCache.StreamCacheCreateFunction)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.parseCOSStream(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.parseFileObject(java.lang.Long, org.apache.pdfbox.cos.COSObjectKey)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.parseHeader(java.lang.String, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.parseHeader(java.lang.String, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.parseObjectStreamObject(long, org.apache.pdfbox.cos.COSObjectKey)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.parseTrailer()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.parseXref(long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.parseXref(long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.parseXref(long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.parseXrefTable(long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.validateStreamLength(long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.validateStreamLength(long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.COSParser.validateXrefOffsets(java.util.Map)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.PDFParser.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.PDFParser.parse(boolean)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.PDFStreamParser.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.PDFStreamParser.hasNoFollowingBinData()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.PDFStreamParser.parseNextToken()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.XrefTrailerResolver.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.XrefTrailerResolver.setStartxref(long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.XrefTrailerResolver.setTrailer(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfparser.XrefTrailerResolver.setXRef(org.apache.pdfbox.cos.COSObjectKey, long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfwriter.COSWriter.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfwriter.COSWriter.detectPossibleSignature(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfwriter.COSWriter.detectPossibleSignature(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfwriter.compress.COSWriterObjectStream.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdfwriter.compress.COSWriterObjectStream.writeObject(java.io.OutputStream, org.apache.pdfbox.cos.COSBase, boolean)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDAbstractContentStream.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDAbstractContentStream.close()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDAbstractContentStream.setFont(org.apache.pdfbox.pdmodel.font.PDFont, float)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDAbstractContentStream.setFont(org.apache.pdfbox.pdmodel.font.PDFont, float)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDAbstractContentStream.setFont(org.apache.pdfbox.pdmodel.font.PDFont, float)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocument.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocument.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocument.getVersion()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocument.importPage(org.apache.pdfbox.pdmodel.PDPage)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocument.protect(org.apache.pdfbox.pdmodel.encryption.ProtectionPolicy)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocument.save(java.io.File, org.apache.pdfbox.pdfwriter.compress.CompressParameters)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocument.setVersion(float)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocumentCatalog.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocumentCatalog.getAcroForm(org.apache.pdfbox.pdmodel.fixup.PDDocumentFixup)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocumentCatalog.getPageLayout()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDDocumentCatalog.getPageMode()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPage.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPage.getContentsForRandomAccess()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPage.getContentsForStreamParsing()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPage.getMediaBox()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPage.getViewports()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPage.lambda.getContentsForRandomAccess(java.util.List, org.apache.pdfbox.cos.COSStream)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPageContentStream.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPageContentStream.<init>(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.PDPage)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPageTree.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPageTree.PageIterator.enqueueKids(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.PDPageTree.getKids(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDNameTreeNode.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDNameTreeNode.calculateLimits()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDNameTreeNode.getKids()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDNameTreeNode.getNames()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDNameTreeNode.getValue(java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDNumberTreeNode.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDNumberTreeNode.getKids()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDNumberTreeNode.getNumbers()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDNumberTreeNode.getNumbers()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDNumberTreeNode.getValue(java.lang.Integer)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDStream.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.PDStream.internalGetDecodeParams(org.apache.pdfbox.cos.COSName, org.apache.pdfbox.cos.COSName)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.function.PDFunctionType0.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.common.function.PDFunctionType0.Rinterpol.getSamples()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDObjectReference.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDObjectReference.getReferencedObject()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureTreeRoot.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.documentinterchange.logicalstructure.PDStructureTreeRoot.getRoleMap()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.documentinterchange.taggedpdf.StandardStructureTypes.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.appendCertInfo(java.lang.StringBuilder, org.bouncycastle.cms.KeyTransRecipientId, java.security.cert.X509Certificate, org.bouncycastle.cert.X509CertificateHolder)",
+    "thirdPartyMethod" : "org.bouncycastle.cms.KeyTransRecipientId.getSerialNumber()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.appendCertInfo(java.lang.StringBuilder, org.bouncycastle.cms.KeyTransRecipientId, java.security.cert.X509Certificate, org.bouncycastle.cert.X509CertificateHolder)",
+    "thirdPartyMethod" : "org.bouncycastle.cms.KeyTransRecipientId.getIssuer()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.appendCertInfo(java.lang.StringBuilder, org.bouncycastle.cms.KeyTransRecipientId, java.security.cert.X509Certificate, org.bouncycastle.cert.X509CertificateHolder)",
+    "thirdPartyMethod" : "org.bouncycastle.cert.X509CertificateHolder.getIssuer()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.x509.TBSCertificate.getInstance(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1InputStream.close()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.x509.TBSCertificate.getSubjectPublicKeyInfo()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.cms.RecipientIdentifier.<init>(org.bouncycastle.asn1.cms.IssuerAndSerialNumber)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.x509.TBSCertificate.getSerialNumber()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.x509.TBSCertificate.getIssuer()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.DEROctetString.<init>(byte[])"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1InputStream.<init>(byte[])"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1Integer.getValue()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.cms.KeyTransRecipientInfo.<init>(org.bouncycastle.asn1.cms.RecipientIdentifier, org.bouncycastle.asn1.x509.AlgorithmIdentifier, org.bouncycastle.asn1.ASN1OctetString)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.x509.SubjectPublicKeyInfo.getAlgorithm()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1ObjectIdentifier.getId()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.cms.IssuerAndSerialNumber.<init>(org.bouncycastle.asn1.x500.X500Name, java.math.BigInteger)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.x509.AlgorithmIdentifier.getAlgorithm()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientInfo(java.security.cert.X509Certificate, byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1InputStream.readObject()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.computeRecipientsField(byte[])",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1Primitive.encodeTo(java.io.OutputStream, java.lang.String)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.cms.EnvelopedData.<init>(org.bouncycastle.asn1.cms.OriginatorInfo, org.bouncycastle.asn1.ASN1Set, org.bouncycastle.asn1.cms.EncryptedContentInfo, org.bouncycastle.asn1.ASN1Set)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1InputStream.readObject()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.DERSet.<init>(org.bouncycastle.asn1.ASN1Encodable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1ObjectIdentifier.getId()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.x509.AlgorithmIdentifier.<init>(org.bouncycastle.asn1.ASN1ObjectIdentifier, org.bouncycastle.asn1.ASN1Encodable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.cms.RecipientInfo.<init>(org.bouncycastle.asn1.cms.KeyTransRecipientInfo)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.cms.ContentInfo.<init>(org.bouncycastle.asn1.ASN1ObjectIdentifier, org.bouncycastle.asn1.ASN1Encodable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1InputStream.<init>(byte[])"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.DEROctetString.<init>(byte[])"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.cms.EncryptedContentInfo.<init>(org.bouncycastle.asn1.ASN1ObjectIdentifier, org.bouncycastle.asn1.x509.AlgorithmIdentifier, org.bouncycastle.asn1.ASN1OctetString)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1InputStream.close()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.ASN1ObjectIdentifier.<init>(java.lang.String)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.createDERForRecipient(byte[], java.security.cert.X509Certificate)",
+    "thirdPartyMethod" : "org.bouncycastle.asn1.cms.ContentInfo.toASN1Primitive()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.bouncycastle.cms.RecipientId.match(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.bouncycastle.cms.RecipientInformation.getContent(org.bouncycastle.cms.Recipient)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.bouncycastle.cert.X509CertificateHolder.<init>(byte[])"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.bouncycastle.cms.CMSEnvelopedData.getRecipientInfos()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.bouncycastle.util.Arrays.copyOf(byte[], int)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.bouncycastle.cms.RecipientInformationStore.getRecipients()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.bouncycastle.cms.RecipientInformation.getRID()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.bouncycastle.cms.CMSEnvelopedData.<init>(byte[])"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.PublicKeySecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.bouncycastle.cms.jcajce.JceKeyTransEnvelopedRecipient.<init>(java.security.PrivateKey)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.SecurityHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.SecurityHandler.decryptStream(org.apache.pdfbox.cos.COSStream, long, long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.SecurityHandler.decryptStream(org.apache.pdfbox.cos.COSStream, long, long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.SecurityHandler.decryptStream(org.apache.pdfbox.cos.COSStream, long, long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.SecurityHandler.decryptString(org.apache.pdfbox.cos.COSString, long, long)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.SecurityHandler.encryptDataAES256(java.io.InputStream, java.io.OutputStream, boolean)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.SecurityProvider.getProvider()",
+    "thirdPartyMethod" : "org.bouncycastle.jce.provider.BouncyCastleProvider.<init>()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.logIfStrongEncryptionMissing()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.logIfStrongEncryptionMissing()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.prepareForDecryption(org.apache.pdfbox.pdmodel.encryption.PDEncryption, org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.encryption.DecryptionMaterial)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.encryption.StandardSecurityHandler.validatePerms(org.apache.pdfbox.pdmodel.encryption.PDEncryption, int, boolean)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotation.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotation.<init>(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotation.create(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationFreeText.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationFreeText.<init>(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationInk.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationInk.<init>(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationLink.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationLink.<init>(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationPolygon.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationPolygon.initVertices(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationPolyline.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationPolyline.initVertices(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.<init>(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.<init>(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.<init>(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.parseArrayElement(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.parseArrayElement(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.parseDictElement(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.parseDictElement(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.parseStampAnnotationAppearanceXML(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.parseStampAnnotationAppearanceXML(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.parseStreamElement(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFAnnotationStamp.parseStreamElement(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFDictionary.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFDictionary.<init>(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFDictionary.<init>(org.w3c.dom.Element)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fdf.FDFDocument.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fixup.processor.AcroFormGenerateAppearancesProcessor.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fixup.processor.AcroFormGenerateAppearancesProcessor.process()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fixup.processor.AcroFormOrphanWidgetsProcessor.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fixup.processor.AcroFormOrphanWidgetsProcessor.ensureFontResources(org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.interactive.form.PDVariableText)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fixup.processor.AcroFormOrphanWidgetsProcessor.ensureFontResources(org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.interactive.form.PDVariableText)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fixup.processor.AcroFormOrphanWidgetsProcessor.lambda.addFontFromWidget(org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.cos.COSName)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fixup.processor.AcroFormOrphanWidgetsProcessor.lambda.addFontFromWidget(org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.cos.COSName)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.fixup.processor.AcroFormOrphanWidgetsProcessor.resolveFieldsFromWidgets(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.<init>(org.apache.pdfbox.pdmodel.font.FontCache)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.<init>(org.apache.pdfbox.pdmodel.font.FontCache)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.<init>(org.apache.pdfbox.pdmodel.font.FontCache)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isTraceEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.<init>(org.apache.pdfbox.pdmodel.font.FontCache)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.trace(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.FSFontInfo.getOTFFont(java.lang.String, java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.FSFontInfo.getOTFFont(java.lang.String, java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.FSFontInfo.getOTFFont(java.lang.String, java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.FSFontInfo.getOTFFont(java.lang.String, java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.FSFontInfo.getTrueTypeFont(java.lang.String, java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.FSFontInfo.getTrueTypeFont(java.lang.String, java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.FSFontInfo.getTrueTypeFont(java.lang.String, java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.FSFontInfo.getType1Font(java.lang.String, java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.FSFontInfo.getType1Font(java.lang.String, java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.FSFontInfo.getType1Font(java.lang.String, java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.addTrueTypeCollection(java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.addTrueTypeFont(java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.addTrueTypeFontImpl(org.apache.fontbox.ttf.FontHeaders, java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isTraceEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.addTrueTypeFontImpl(org.apache.fontbox.ttf.FontHeaders, java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.trace(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.addTrueTypeFontImpl(org.apache.fontbox.ttf.FontHeaders, java.io.File, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.addType1Font(java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.addType1Font(java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.trace(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.addType1Font(java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isTraceEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.addType1Font(java.io.File)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.loadDiskCache(java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.loadDiskCache(java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.loadDiskCache(java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.loadDiskCache(java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.loadDiskCache(java.util.List)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.saveDiskCache()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.saveDiskCache()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FileSystemFontProvider.saveDiskCache()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FontMapperImpl.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FontMapperImpl.getCIDFont(java.lang.String, org.apache.pdfbox.pdmodel.font.PDFontDescriptor, org.apache.pdfbox.pdmodel.font.PDCIDSystemInfo)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FontMapperImpl.getCIDFont(java.lang.String, org.apache.pdfbox.pdmodel.font.PDFontDescriptor, org.apache.pdfbox.pdmodel.font.PDCIDSystemInfo)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FontMapperImpl.getFont(org.apache.pdfbox.pdmodel.font.FontFormat, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.FontMapperImpl.getFont(org.apache.pdfbox.pdmodel.font.FontFormat, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFont.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFont.readWidths()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType0.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType0.<init>(org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.pdmodel.font.PDType0Font)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType0.<init>(org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.pdmodel.font.PDType0Font)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType0.generateBoundingBox()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType0.getFontMatrix()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType2.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType2.<init>(org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.pdmodel.font.PDType0Font, org.apache.fontbox.ttf.TrueTypeFont)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType2.<init>(org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.pdmodel.font.PDType0Font, org.apache.fontbox.ttf.TrueTypeFont)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType2.codeToGID(int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType2.findFontOrSubstitute()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType2Embedder.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDCIDFontType2Embedder.buildVerticalHeader(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFont.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFont.getSpaceWidth()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFont.getSpaceWidth()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFont.getSpaceWidth()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFont.getSpaceWidth()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFont.loadUnicodeCmap()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFont.loadUnicodeCmap()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFontFactory.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFontFactory.createFont(org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.pdmodel.ResourceCache)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFontFactory.createFont(org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.pdmodel.ResourceCache)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFontFactory.fixType0Subtype(org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.cos.COSDictionary, org.apache.pdfbox.cos.COSName)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDFontFactory.getFontHeader(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDSimpleFont.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDSimpleFont.readEncoding()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDSimpleFont.toUnicode(int, org.apache.pdfbox.pdmodel.font.encoding.GlyphList)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isWarnEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDSimpleFont.toUnicode(int, org.apache.pdfbox.pdmodel.font.encoding.GlyphList)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.<init>(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDTrueTypeFont.<init>(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType0Font.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType0Font.fetchCMapUCS2()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType0Font.readEncoding()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType0Font.toUnicode(int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType0Font.toUnicode(int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType0Font.toUnicode(int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isWarnEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1CFont.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1CFont.<init>(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1CFont.<init>(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1CFont.<init>(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1CFont.getFontMatrix()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1CFont.getHeight(int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1CFont.getStringWidth(java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1Font.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1Font.<init>(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1Font.<init>(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1Font.<init>(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1Font.<init>(org.apache.pdfbox.pdmodel.font.Standard14Fonts.FontName)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1Font.<init>(org.apache.pdfbox.pdmodel.font.Standard14Fonts.FontName)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1Font.getFontMatrix()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1Font.repairLength1(byte[], int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isWarnEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1Font.repairLength1(byte[], int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType1Font.repairLength2(byte[], int, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType3CharProc.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType3CharProc.getResources()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType3Font.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType3Font.generateBoundingBox()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType3Font.generateBoundingBox()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.PDType3Font.readEncoding()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.encoding.DictionaryEncoding.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.encoding.DictionaryEncoding.<init>(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.encoding.GlyphList.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.encoding.GlyphList.loadList(java.io.InputStream)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.font.encoding.GlyphList.toUnicode(java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.blend.BlendComposite.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.blend.BlendComposite.getInstance(org.apache.pdfbox.pdmodel.graphics.blend.BlendMode, float)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDColor.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDColor.<init>(float[], org.apache.pdfbox.cos.COSName, org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDColor.<init>(float[], org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDColor.<init>(org.apache.pdfbox.cos.COSArray, org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDColor.initComponents(org.apache.pdfbox.cos.COSArray)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDDeviceNAttributes.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDDeviceNAttributes.toString()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDDeviceNProcess.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDDeviceNProcess.toString()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDICCBased.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDICCBased.ensureDisplayProfile(java.awt.color.ICC_Profile)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDICCBased.fallbackToAlternateColorSpace(java.lang.Exception)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDICCBased.getNumberOfComponents()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.color.PDICCBased.loadICCProfile()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.JPEGFactory.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.JPEGFactory.getNumComponentsFromImageMetadata(javax.imageio.ImageReader)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.JPEGFactory.retrieveDimensions(java.io.ByteArrayInputStream)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.JPEGFactory.retrieveDimensions(java.io.ByteArrayInputStream)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject.createFromByteArray(org.apache.pdfbox.pdmodel.PDDocument, byte[], java.lang.String, org.apache.pdfbox.pdmodel.graphics.image.CustomFactory)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject.createFromFileByContent(java.io.File, org.apache.pdfbox.pdmodel.PDDocument)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject.createFromFileByExtension(java.io.File, org.apache.pdfbox.pdmodel.PDDocument)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject.extractMatte(org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject.getSuffix()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject.initJPXValues()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject.scaleImage(java.awt.image.BufferedImage, int, int, int, boolean)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.buildImageObject(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.PNGConverterState)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.buildImageObject(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.PNGConverterState)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.buildIndexImage(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.PNGConverterState)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.buildIndexImage(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.PNGConverterState)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.checkChunkSane(org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.Chunk)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.checkConverterState(org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.PNGConverterState)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.convertPng(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.PNGConverterState)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.convertPng(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.PNGConverterState)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.createCOSStreamwithIccProfile(org.apache.pdfbox.pdmodel.PDDocument, org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace, org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.PNGConverterState)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.parsePNGChunks(byte[])",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.PNGConverter.parsePNGChunks(byte[])",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.from1Bit(org.apache.pdfbox.pdmodel.graphics.image.PDImage, java.awt.Rectangle, int, int, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.from8bit(org.apache.pdfbox.pdmodel.graphics.image.PDImage, java.awt.image.WritableRaster, java.awt.Rectangle, int, int, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.fromAny(org.apache.pdfbox.pdmodel.graphics.image.PDImage, java.awt.image.WritableRaster, org.apache.pdfbox.cos.COSArray, java.awt.Rectangle, int, int, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.getDecodeArray(org.apache.pdfbox.pdmodel.graphics.image.PDImage)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.getDecodeArray(org.apache.pdfbox.pdmodel.graphics.image.PDImage)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.image.SampledImageReader.getStencilImage(org.apache.pdfbox.pdmodel.graphics.image.PDImage, java.awt.Paint)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.AxialShadingContext.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.AxialShadingContext.<init>(org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType2, java.awt.image.ColorModel, java.awt.geom.AffineTransform, org.apache.pdfbox.util.Matrix, java.awt.Rectangle)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.AxialShadingPaint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.AxialShadingPaint.createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.IntPoint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.IntPoint.equals(java.lang.Object)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDMeshBasedShadingType.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDMeshBasedShadingType.collectPatches(java.awt.geom.AffineTransform, org.apache.pdfbox.util.Matrix, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDMeshBasedShadingType.collectPatches(java.awt.geom.AffineTransform, org.apache.pdfbox.util.Matrix, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDMeshBasedShadingType.readPatch(javax.imageio.stream.ImageInputStream, boolean, java.awt.geom.Point2D[], float[][], long, long, org.apache.pdfbox.pdmodel.common.PDRange, org.apache.pdfbox.pdmodel.common.PDRange, org.apache.pdfbox.pdmodel.common.PDRange[], org.apache.pdfbox.util.Matrix, java.awt.geom.AffineTransform, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType4.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType4.collectTriangles(java.awt.geom.AffineTransform, org.apache.pdfbox.util.Matrix)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDTriangleBasedShadingType.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDTriangleBasedShadingType.getBitsPerComponent()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDTriangleBasedShadingType.getBitsPerCoordinate()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDTriangleBasedShadingType.getBitsPerCoordinate()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDTriangleBasedShadingType.getNumberOfColorComponents()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.PDTriangleBasedShadingType.readVertex(javax.imageio.stream.ImageInputStream, long, long, org.apache.pdfbox.pdmodel.common.PDRange, org.apache.pdfbox.pdmodel.common.PDRange, org.apache.pdfbox.pdmodel.common.PDRange[], org.apache.pdfbox.util.Matrix, java.awt.geom.AffineTransform)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.RadialShadingContext.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.RadialShadingContext.<init>(org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType3, java.awt.image.ColorModel, java.awt.geom.AffineTransform, org.apache.pdfbox.util.Matrix, java.awt.Rectangle)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.RadialShadingPaint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.RadialShadingPaint.createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type1ShadingContext.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type1ShadingContext.<init>(org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType1, java.awt.image.ColorModel, java.awt.geom.AffineTransform, org.apache.pdfbox.util.Matrix)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type1ShadingContext.getRaster(int, int, int, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type1ShadingPaint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type1ShadingPaint.createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type4ShadingContext.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type4ShadingContext.<init>(org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType4, java.awt.image.ColorModel, java.awt.geom.AffineTransform, org.apache.pdfbox.util.Matrix, java.awt.Rectangle)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type4ShadingPaint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type4ShadingPaint.createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type5ShadingContext.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type5ShadingContext.<init>(org.apache.pdfbox.pdmodel.graphics.shading.PDShadingType5, java.awt.image.ColorModel, java.awt.geom.AffineTransform, org.apache.pdfbox.util.Matrix, java.awt.Rectangle)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type5ShadingPaint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type5ShadingPaint.createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type6ShadingPaint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type6ShadingPaint.createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type7ShadingPaint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.shading.Type7ShadingPaint.createContext(java.awt.image.ColorModel, java.awt.Rectangle, java.awt.geom.Rectangle2D, java.awt.geom.AffineTransform, java.awt.RenderingHints)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.state.PDSoftMask.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.graphics.state.PDSoftMask.create(org.apache.pdfbox.cos.COSBase, org.apache.pdfbox.pdmodel.ResourceCache)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.<init>(org.apache.pdfbox.cos.COSDictionary)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.createAnnotation(org.apache.pdfbox.cos.COSBase)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotation.getRectangle()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationPopup.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationPopup.getParent()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationPopup.getParent()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDCaretAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDCaretAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDCircleAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDCircleAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDFileAttachmentAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDFileAttachmentAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDFreeTextAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDFreeTextAppearanceHandler.extractFontDetails(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationFreeText)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDFreeTextAppearanceHandler.extractNonStrokingColor(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationFreeText)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDFreeTextAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDHighlightAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDHighlightAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDInkAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDInkAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDLineAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDLineAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDLineAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDLinkAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDLinkAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDLinkAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDPolygonAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDPolygonAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDPolylineAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDPolylineAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDSquareAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDSquareAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDSquigglyAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDSquigglyAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDStrikeoutAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDStrikeoutAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDTextAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDTextAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDUnderlineAppearanceHandler.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.annotation.handlers.PDUnderlineAppearanceHandler.generateNormalAppearance()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDFTemplateCreator.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDFTemplateCreator.buildPDF(org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSignDesigner)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.<init>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createAcroForm(org.apache.pdfbox.pdmodel.PDDocument)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createAcroFormDictionary(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm, org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createAffineTransform(java.awt.geom.AffineTransform)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createAppearanceDictionary(org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject, org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createBackgroundLayerForm(org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.common.PDRectangle)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createFormatterRectangle(int[])",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createHolderForm(org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.common.PDStream, org.apache.pdfbox.pdmodel.common.PDRectangle)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createHolderFormResources()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createHolderFormStream(org.apache.pdfbox.pdmodel.PDDocument)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createImageForm(org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.common.PDStream, org.apache.pdfbox.pdmodel.common.PDRectangle, java.awt.geom.AffineTransform, org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createImageFormResources()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createImageFormStream(org.apache.pdfbox.pdmodel.PDDocument)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createInnerForm(org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.common.PDStream, org.apache.pdfbox.pdmodel.common.PDRectangle)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createInnerFormResource()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createInnerFormStream(org.apache.pdfbox.pdmodel.PDDocument)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createPage(org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSignDesigner)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createProcSetArray()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createSignature(org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField, org.apache.pdfbox.pdmodel.PDPage, java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createSignatureField(org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createSignatureImage(org.apache.pdfbox.pdmodel.PDDocument, java.awt.image.BufferedImage)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createSignatureRectangle(org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField, org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSignDesigner)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createVisualSignature(org.apache.pdfbox.pdmodel.PDDocument)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.createWidgetDictionary(org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField, org.apache.pdfbox.pdmodel.PDResources)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.injectAppearanceStreams(org.apache.pdfbox.pdmodel.common.PDStream, org.apache.pdfbox.pdmodel.common.PDStream, org.apache.pdfbox.pdmodel.common.PDStream, org.apache.pdfbox.cos.COSName, org.apache.pdfbox.cos.COSName, org.apache.pdfbox.cos.COSName, org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSignDesigner)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.injectProcSetArray(org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject, org.apache.pdfbox.pdmodel.PDPage, org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.pdmodel.PDResources, org.apache.pdfbox.cos.COSArray)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.digitalsignature.visible.PDVisibleSigBuilder.insertInnerFormToHolderResources(org.apache.pdfbox.pdmodel.graphics.form.PDFormXObject, org.apache.pdfbox.pdmodel.PDResources)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNode.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.documentnavigation.outline.PDOutlineNode.updateParentOpenCount(int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper.getFormattedValue(java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper.insertGeneratedAppearance(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationWidget, org.apache.pdfbox.pdmodel.interactive.annotation.PDAppearanceStream, java.io.OutputStream)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper.insertGeneratedAppearance(org.apache.pdfbox.pdmodel.interactive.annotation.PDAnnotationWidget, org.apache.pdfbox.pdmodel.interactive.annotation.PDAppearanceStream, java.io.OutputStream)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper.resolveGlyphHeight(org.apache.pdfbox.pdmodel.font.PDFont, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper.setAppearanceValue(java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper.validateAndEnsureAcroFormResources()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.AppearanceGeneratorHelper.validateAndEnsureAcroFormResources()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.buildPagesWidgetsMap(java.util.List, org.apache.pdfbox.pdmodel.PDPageTree)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.flatten()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.PDAcroForm.flatten(java.util.List, boolean)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.PDFieldTree.FieldIterator.enqueueKids(org.apache.pdfbox.pdmodel.interactive.form.PDField)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.PDNonTerminalField.getChildren()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.pdmodel.interactive.form.PDSignatureField.constructAppearances()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.printing.PDFPrintable.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.printing.PDFPrintable.print(java.awt.Graphics, java.awt.print.PageFormat, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.printing.PDFPrintable.print(java.awt.Graphics, java.awt.print.PageFormat, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.printing.PDFPrintable.print(java.awt.Graphics, java.awt.print.PageFormat, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.isDebugEnabled()"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.GlyphCache.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.GlyphCache.getPathForCharacterCode(int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.GlyphCache.getPathForCharacterCode(int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.PageDrawer.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.PageDrawer.TransparencyGroup.<init>(org.apache.pdfbox.rendering.PageDrawer, org.apache.pdfbox.pdmodel.graphics.form.PDTransparencyGroup, boolean, org.apache.pdfbox.util.Matrix, org.apache.pdfbox.pdmodel.graphics.color.PDColor)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.PageDrawer.TransparencyGroup.isGray(org.apache.pdfbox.pdmodel.graphics.color.PDColorSpace)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.PageDrawer.getPaint(org.apache.pdfbox.pdmodel.graphics.color.PDColor)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.PageDrawer.getStroke()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.PageDrawer.shadingFill(org.apache.pdfbox.cos.COSName)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.PageDrawer.showTransparencyGroupOnGraphics(org.apache.pdfbox.pdmodel.graphics.form.PDTransparencyGroup, java.awt.Graphics2D)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.SoftMask.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.SoftMask.<init>(java.awt.Paint, java.awt.image.BufferedImage, java.awt.geom.Rectangle2D, org.apache.pdfbox.pdmodel.graphics.color.PDColor, org.apache.pdfbox.pdmodel.common.function.PDFunction)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.SoftMask.SoftPaintContext.getRaster(int, int, int, int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.TilingPaint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.TilingPaint.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.TilingPaint.getAnchorRect(org.apache.pdfbox.pdmodel.graphics.pattern.PDTilingPattern)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.TilingPaintFactory.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.rendering.TilingPaintFactory.TilingPaintParameter.equals(java.lang.Object)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.text.LegacyPDFStreamEngine.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.text.LegacyPDFStreamEngine.showGlyph(org.apache.pdfbox.util.Matrix, org.apache.pdfbox.pdmodel.font.PDFont, int, org.apache.pdfbox.util.Vector)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.text.PDFTextStripper.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.text.PDFTextStripper.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.text.PDFTextStripper.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.text.PDFTextStripper.setEndPage(int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.text.PDFTextStripper.setStartPage(int)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.warn(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.text.TextPosition.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.text.TextPosition.mergeDiacritic(org.apache.pdfbox.text.TextPosition)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.info(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.util.DateConverter.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.util.DateConverter.parseBigEndianDate(java.lang.String, java.text.ParsePosition)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  }, {
+    "caller" : "org.apache.pdfbox.util.Hex.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.util.Hex.decodeHex(java.lang.String)",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.error(java.lang.Object)"
+  }, {
+    "caller" : "org.apache.pdfbox.util.Version.<clinit>()",
+    "thirdPartyMethod" : "org.apache.commons.logging.LogFactory.getLog(java.lang.Class)"
+  }, {
+    "caller" : "org.apache.pdfbox.util.Version.getVersion()",
+    "thirdPartyMethod" : "org.apache.commons.logging.Log.debug(java.lang.Object, java.lang.Throwable)"
+  } ]
+}
